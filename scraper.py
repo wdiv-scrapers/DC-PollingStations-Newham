@@ -6,7 +6,7 @@ districts_url = "https://mapping.newham.gov.uk/ArcGIS/rest/services/Polling_Stat
 council_id = 'E09000025'
 
 
-stations_scraper = HashOnlyScraper(stations_url, council_id, 'stations')
+stations_scraper = HashOnlyScraper(stations_url, council_id, 'stations', 'kmz')
 stations_scraper.scrape()
-districts_scraper = HashOnlyScraper(districts_url, council_id, 'districts')
+districts_scraper = HashOnlyScraper(districts_url, council_id, 'districts', 'kmz')
 districts_scraper.scrape()
